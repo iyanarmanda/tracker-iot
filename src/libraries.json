@@ -1,7 +1,6 @@
 {
   "libraries": [
     "GeoLinker",
-    "PubSubClient",
-    "ArduinoJson"
+    "PubSubClient"
   ]
 }

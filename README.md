@@ -1,15 +1,10 @@
-# CargoWatch IoT
+# Tracker IoT
 
 ## Components
 
-- ESP32 DevKit V1
-- DHT22
-- MPU6050
+- GeoLinker
 
 ## Supported IDE
 
 - Velxio
 
-## License
-
-This project is MIT Licensed
