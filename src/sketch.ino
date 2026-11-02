@@ -85,11 +85,15 @@ void setup() {
 
   Serial.println("Starting GeoLinker GPS Tracker...");
 
+  String deviceId = getUniqueDeviceId();
+  Serial.print("Device ID: ");
+  Serial.println(deviceId);
+
   gpsSerial.begin(GPS_BAUD, SERIAL_8N1, GPS_RX, GPS_TX);
   
   geo.begin(gpsSerial);
   geo.setApiKey(API_KEY);
-  geo.setDeviceID(getUniqueDeviceId());
+  geo.setDeviceID(deviceId);
   geo.setUpdateInterval_seconds(updateInterval);
   geo.setDebugLevel(DEBUG_BASIC);
   geo.enableOfflineStorage(enableOfflineStorage);
